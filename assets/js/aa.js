@@ -21,7 +21,7 @@ button.addEventListener('click', () => {
             document.getElementById('grade').innerHTML = `<h1>${grade}</h1>`
             document.getElementById('info').innerHTML = `
             <h3>${weatherData.weather[0].description}</h3>`
-        })
+        }).catch(console.log('error Loading Link'))
     
 })
 
